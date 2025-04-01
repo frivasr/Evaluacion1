@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctores - Consulta Médica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-medico.png" alt="Logo Médico" width="50">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="especialidades.html">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="doctores.html">Doctores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h1>Nuestro Equipo de Doctores</h1>
+        <p>Conoce a nuestros profesionales altamente calificados.</p>
+
+        <div class="doctor-card" data-bs-toggle="modal" data-bs-target="#doctorModal1">
+            <img src="https://www.shutterstock.com/image-photo/healthcare-medical-staff-concept-portrait-600nw-2281024823.jpg" alt="Dr. Juan Pérez">
+            <div>
+                <h3>Dr. Juan Pérez</h3>
+                <p>Cardiólogo</p>
+                <p>Especialista en enfermedades del corazón y sistema circulatorio.</p>
+            </div>
+        </div>
+
+        <div class="doctor-card" data-bs-toggle="modal" data-bs-target="#doctorModal2">
+            <img src="https://media.istockphoto.com/id/638647058/es/foto/ofrecemos-a-nuestros-pacientes-atenci%C3%B3n-m%C3%A9dica-premium-aqu%C3%AD.jpg?s=612x612&w=0&k=20&c=AmYmLRjp5oNg4ixyzHSBuz79iEawlPvmxQ8ZuTad3yo=" alt="Dra. María García">
+            <div>
+                <h3>Dra. María García</h3>
+                <p>Dermatóloga</p>
+                <p>Especialista en enfermedades de la piel, cabello y uñas.</p>
+            </div>
+        </div>
+
+        <div class="doctor-card" data-bs-toggle="modal" data-bs-target="#doctorModal3">
+            <img src="https://media.istockphoto.com/id/1390000431/es/foto/inyecci%C3%B3n-de-un-m%C3%A9dico-maduro-con-una-tableta-digital-en-un-hospital-moderno.jpg?s=612x612&w=0&k=20&c=KFtETXPxOVTPNAWQwRdtD38MsH6xNXJzCSLi2DzMosM=" alt="Dr. Carlos López">
+            <div>
+                <h3>Dr. Carlos López</h3>
+                <p>Neurólogo</p>
+                <p>Especialista en enfermedades del sistema nervioso.</p>
+            </div>
+        </div>
+
+        <div class="doctor-card" data-bs-toggle="modal" data-bs-target="#doctorModal4">
+            <img src="https://plus.unsplash.com/premium_photo-1664475450083-5c9eef17a191?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwZG9jdG9yfGVufDB8fDB8fHww" alt="Dra. Ana Rodríguez">
+            <div>
+                <h3>Dra. Ana Rodríguez</h3>
+                <p>Pediatra</p>
+                <p>Especialista en la salud de niños y adolescentes.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Consulta Médica</p>
+    </footer>
+
+    <div class="modal fade" id="doctorModal1" tabindex="-1" aria-labelledby="doctorModal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="doctorModal1Label">Dr. Juan Pérez</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48fbf2c3a339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Dr. Juan Pérez" class="img-fluid">
+                    <p>Especialista en enfermedades del corazón y sistema circulatorio.</p>
+                    <p>Amplia experiencia en el tratamiento de...</p>
+                    <p>Horario de atención: Lunes a Viernes de 9:00 a 18:00.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Agendar Cita</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
